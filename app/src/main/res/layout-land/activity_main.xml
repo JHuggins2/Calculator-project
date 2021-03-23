@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="MissingDefaultResource">
 
 
     <GridLayout
@@ -12,8 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:alignmentMode="alignMargins"
-        android:columnCount="4"
-        android:rowCount="7"
+        android:columnCount="5"
+        android:rowCount="6"
         android:useDefaultMargins="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,32 +25,13 @@
             android:id="@+id/display"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_columnSpan="4"
+            android:layout_columnSpan="5"
             android:layout_gravity="fill"
             android:text=""
             android:textAlignment="textEnd"
             android:textSize="30sp"
             tools:ignore="RtlCompat" />
 
-        <Button
-            android:id="@+id/button1"
-            android:onClick="buttonOnCLick"
-            android:text="CE" />
-
-        <Button
-            android:id="@+id/button2"
-            android:onClick="buttonOnCLick"
-            android:text="C" />
-
-        <Button
-            android:id="@+id/button3"
-            android:onClick="buttonOnCLick"
-            android:text="+/-"/>
-
-        <Button
-            android:id="@+id/button4"
-            android:onClick="buttonOnCLick"
-            android:text="/" />
 
         <Button
             android:id="@+id/button5"
@@ -67,9 +49,14 @@
             android:text="9" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/button16"
             android:onClick="buttonOnCLick"
-            android:text="*" />
+            android:text="+" />
+
+        <Button
+            android:id="@+id/button2"
+            android:onClick="buttonOnCLick"
+            android:text="C" />
 
         <Button
             android:id="@+id/button9"
@@ -92,6 +79,11 @@
             android:text="-" />
 
         <Button
+            android:id="@+id/button1"
+            android:onClick="buttonOnCLick"
+            android:text="CE" />
+
+        <Button
             android:id="@+id/button13"
             android:onClick="buttonOnCLick"
             android:text="1" />
@@ -107,9 +99,14 @@
             android:text="3" />
 
         <Button
-            android:id="@+id/button16"
+            android:id="@+id/button8"
             android:onClick="buttonOnCLick"
-            android:text="+" />
+            android:text="*" />
+
+        <Button
+            android:id="@+id/button4"
+            android:onClick="buttonOnCLick"
+            android:text="/" />
 
         <Button
             android:id="@+id/button17"
@@ -122,15 +119,21 @@
             android:text="0" />
 
         <Button
+            android:id="@+id/button3"
+            android:onClick="buttonOnCLick"
+            android:text="+/-"/>
+
+        <Button
             android:id="@+id/button19"
             android:layout_rowSpan="1"
             android:layout_columnSpan="2"
             android:layout_gravity="fill_horizontal"
             android:onClick="buttonOnCLick"
             android:text="=" />
+
         <Button
             android:id="@+id/buttonPrev"
-            android:layout_columnSpan="4"
+            android:layout_columnSpan="5"
             android:layout_gravity="center_horizontal"
             android:text="@string/previous" />
 
